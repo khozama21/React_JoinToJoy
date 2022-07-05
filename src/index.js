@@ -7,7 +7,7 @@ import Home from "./views/home";
 import Contact from "./views/Contact";
 
 const App = () => {
- const [hide,setHide]=useState("hie")
+ const [hide,setHide]=useState("hide")
   const hideHandler = ()=>{
     if(hide=="hide"){
       setHide("no")
