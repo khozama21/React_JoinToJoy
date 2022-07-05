@@ -2,7 +2,6 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import Navigation from '../components/navigation'
 import SpeakerCard from '../components/speaker-card'
 import NumbersCard from '../components/numbers-card'
 import EventCard from '../components/event-card'
@@ -17,7 +16,6 @@ const Home = (props) => {
         <title>Join to Joy</title>
         <meta property="og:title" content="Marketing event page" />
       </Helmet>
-      <Navigation></Navigation>
       <main className="home-main">
         <div className="home-hero section-container">
           <div className="home-max-width max-content-container">
