@@ -2,7 +2,6 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import Navigation from '../components/navigation'
 import SpeakerCard from '../components/speaker-card'
 import NumbersCard from '../components/numbers-card'
 import EventCard from '../components/event-card'
@@ -14,32 +13,31 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>Marketing event page</title>
+        <title>Join to Joy</title>
         <meta property="og:title" content="Marketing event page" />
       </Helmet>
-      <Navigation></Navigation>
       <main className="home-main">
         <div className="home-hero section-container">
           <div className="home-max-width max-content-container">
             <div className="home-content-container">
               <h1 className="home-text heading1">
                 <span>
-                  THE MOST INSIGHTFUL
+                TAKE ACTION.
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
                     }}
                   />
                 </span>
-                <span className="home-text02">MARKETING CONFERENCE</span>
-                <br></br>
-                <span>IN EUROPE</span>
-                <span></span>
+                <span>Plan Your Event with</span> <br></br>
+                <span className="home-text02">JOIN TO JOY</span>
+               
+               
               </h1>
               <span className="home-text05">
-                <span>GET YOUR TICKETS AT A HALF PRICE UNTIL 10.10.2022.</span>
+                <span>where we style  birthdays , graduation, shower parties and chocolate designs.</span>
                 <br></br>
-                <span>HURRY UP, LIMITED NUMBERS AVAILABLE.</span>
+               
               </span>
               <div className="home-btns-container">
                 <button className="home-primary button-primary button-lg button">
@@ -51,19 +49,67 @@ const Home = (props) => {
               </div>
             </div>
             <div className="home-video-container">
-              <video
-                src
-                muted="true"
-                poster="/playground_assets/rectangle%205-1200w.png"
-                autoPlay="true"
-                controls="true"
-                className="home-video"
-              ></video>
+              <div  className="home-video">  </div>
             </div>
           </div>
           <div className="home-blue-background"></div>
         </div>
-        <div className="home-sponsors section-container">
+
+        <div className="home-previous-events section-container">
+          <div className="home-max-width4 max-content-container">
+            <div className="home-heading-container3">
+              <h1 className="home-text49 heading2">
+                <span>previous events</span>
+              </h1>
+              <span className="home-text51">
+                Take a tour of our previous conferences
+              </span>
+            </div>
+          </div>
+          
+          <div data-type="slider" className="home-slider">
+            <Slide rootClassName="slide-root-class-name4"></Slide>
+            <Slide
+              // heading="Slide #2"
+              rootClassName="slide-root-class-name1"
+            ></Slide>
+            <Slide
+              // heading="Slide #3"
+              rootClassName="slide-root-class-name"
+             
+            >
+             
+            </Slide>
+            <Slide
+              // heading="Slide #4"
+              rootClassName="slide-root-class-name3"
+            ></Slide>
+            <Slide
+              // heading="Slide #5"
+              rootClassName="slide-root-class-name2"
+            ></Slide>
+          </div>
+          <div className="home-slider-controls">
+            <div data-action="previousSlide" className="home-go-left">
+              <svg viewBox="0 0 1024 1024" className="home-icon">
+                <path d="M250 176l92-90 426 426-426 426-92-90 338-336z"></path>
+              </svg>
+            </div>
+            <div data-action="nextSlide" className="home-go-right">
+              <svg viewBox="0 0 1024 1024" className="home-icon2">
+                <path d="M250 176l92-90 426 426-426 426-92-90 338-336z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        {/* <div className="home-sponsors section-container">
           <div className="home-max-width1 max-content-container">
             <span className="home-text08">
               <span></span>
@@ -102,7 +148,7 @@ const Home = (props) => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="home-speakers section-container">
           <div className="home-max-width2 max-content-container">
             <div className="home-heading-container">
@@ -362,49 +408,7 @@ const Home = (props) => {
             className="home-image7"
           />
         </div>
-        <div className="home-previous-events section-container">
-          <div className="home-max-width4 max-content-container">
-            <div className="home-heading-container3">
-              <h1 className="home-text49 heading2">
-                <span>previous events</span>
-              </h1>
-              <span className="home-text51">
-                Take a tour of our previous conferences
-              </span>
-            </div>
-          </div>
-          <div data-type="slider" className="home-slider">
-            <Slide rootClassName="slide-root-class-name4"></Slide>
-            <Slide
-              heading="Slide #2"
-              rootClassName="slide-root-class-name1"
-            ></Slide>
-            <Slide
-              heading="Slide #3"
-              rootClassName="slide-root-class-name"
-            ></Slide>
-            <Slide
-              heading="Slide #4"
-              rootClassName="slide-root-class-name3"
-            ></Slide>
-            <Slide
-              heading="Slide #5"
-              rootClassName="slide-root-class-name2"
-            ></Slide>
-          </div>
-          <div className="home-slider-controls">
-            <div data-action="previousSlide" className="home-go-left">
-              <svg viewBox="0 0 1024 1024" className="home-icon">
-                <path d="M250 176l92-90 426 426-426 426-92-90 338-336z"></path>
-              </svg>
-            </div>
-            <div data-action="nextSlide" className="home-go-right">
-              <svg viewBox="0 0 1024 1024" className="home-icon2">
-                <path d="M250 176l92-90 426 426-426 426-92-90 338-336z"></path>
-              </svg>
-            </div>
-          </div>
-        </div>
+      
       </main>
       <Footer rootClassName="footer-root-class-name"></Footer>
     </div>

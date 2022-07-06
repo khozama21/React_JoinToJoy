@@ -18,7 +18,7 @@ const Slide = (props) => {
 }
 
 Slide.defaultProps = {
-  heading: 'Slide #1',
+  heading: '',
   rootClassName: '',
 }
 

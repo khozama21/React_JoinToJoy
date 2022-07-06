@@ -12,16 +12,36 @@
 }
 .slide-root-class-name {
   background-color: #ff9b1d;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/5a4fd61a80bd5e2790171278/1516731112862-1YG2S3P0H13FZ84NDLYT/5.jpg?format=2500w);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .slide-root-class-name1 {
+  background-image: url(https://scontent.famm6-1.fna.fbcdn.net/v/t1.6435-9/136688038_2891092277803265_6477431352853116862_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=wT0FSXmQPckAX9sRRhF&_nc_ht=scontent.famm6-1.fna&oh=00_AT_AFLzzcuLFI7-LtWYlxlbHwqDsgfxcdxZ9O01Zs4-Klw&oe=62EB7812);
   background-color: #15bd19;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 .slide-root-class-name2 {
+  background-image: url(https://scontent.famm6-1.fna.fbcdn.net/v/t39.30808-6/274059403_3191710391074784_3575027305108111846_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a26aad&_nc_ohc=K6F3ZQLgHZ8AX_qRAxE&tn=B_Y9wZLf9lgEc2P3&_nc_ht=scontent.famm6-1.fna&oh=00_AT_RVRVjD1XlpmGKuGqbQR2EuzMbk5AYlSWXgbJwjKeCuQ&oe=62C949AE);
   background-color: var(--dl-color-scheme-pink);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
 }
 .slide-root-class-name3 {
+  background-image: url(https://i.pinimg.com/564x/df/b0/85/dfb085aa04915ab5bee73e2a0d9d6273.jpg);
   background-color: var(--dl-color-scheme-lightblue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .slide-root-class-name4 {
+  background-image: url(https://images.pexels.com/photos/5610382/pexels-photo-5610382.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-color: var(--dl-color-scheme-darkblue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
