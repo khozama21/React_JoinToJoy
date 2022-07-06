@@ -5,6 +5,8 @@ import "./index.css";
 import "./style.css";
 import Home from "./views/home";
 import Contact from "./views/Contact";
+import Login from "./views/Login";
+import Signup from "./views/Signup";
 
 const App = () => {
  const [hide,setHide]=useState("hide")
@@ -78,10 +80,10 @@ const App = () => {
           </div>
         </div>
         <div className="rightNav">
-          <Link className="navLog" to="/contact">
+          <Link className="navLog" to="/login">
             Login
           </Link>
-          <Link className="navLog" to="/contact">
+          <Link className="navLog" to="/Signup">
             SignUp
           </Link>
         </div>
@@ -91,6 +93,8 @@ const App = () => {
       <div>
         <Route exact component={Home} path="/" />
         <Route exact component={Contact} path="/contact" />
+        <Route exact component={Login} path="/login" />
+        <Route exact component={Signup} path="/Signup" />
       </div>
       {/* body end*/}
     </Router>
