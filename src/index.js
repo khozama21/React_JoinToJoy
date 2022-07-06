@@ -7,7 +7,7 @@ import Home from "./views/home";
 import Contact from "./views/Contact";
 import Login from "./views/Login";
 import Signup from "./views/Signup";
-import { Categories } from "./views/Categories";
+import { Categories } from "./categories/Categories";
 
 const App = () => {
   const [hide, setHide] = useState("hide")

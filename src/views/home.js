@@ -8,6 +8,7 @@ import EventCard from '../components/event-card'
 import Slide from '../components/slide'
 import Footer from '../components/footer'
 import './home.css'
+import { Categories } from '../categories/Categories'
 
 const Home = (props) => {
   return (
@@ -161,8 +162,8 @@ const Home = (props) => {
               </h1>
             </div>
             <div className="home-speakers-container">
-              <SpeakerCard></SpeakerCard>
-              <SpeakerCard
+             <Categories/>
+              {/* <SpeakerCard
                 role="digital marketing associate @ WPP"
                 lastName="Simpson"
                 firstName="Mellisa"
@@ -203,7 +204,7 @@ const Home = (props) => {
                 lastName="chan"
                 firstName="erick"
                 image_src="https://images.unsplash.com/photo-1558222218-b7b54eede3f3?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEwNHx8cGVvcGxlfGVufDB8fHx8MTY0MzcwODY4MQ&amp;ixlib=rb-1.2.1&amp;h=300"
-              ></SpeakerCard>
+              ></SpeakerCard> */}
             </div>
           </div>
         </div>

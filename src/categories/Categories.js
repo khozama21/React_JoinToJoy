@@ -3,7 +3,7 @@ import Show from "./show";
  
  
 
-function Categories() {
+export const Categories=()=> {
   return (
     <div className="App">
     <Show/>
@@ -12,4 +12,4 @@ function Categories() {
   );
 }
 
-export default Categories;
+ 
