@@ -34,7 +34,7 @@ const List = ({ categories }) => {
                                     <div class="speaker-card-image-container">
                                         <img
                                             alt="image"
-                                            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEwfHxwZW9wbGV8ZW58MHx8fHwxNjQzNzA1NTEx&ixlib=rb-1.2.1&w=300"
+                                            src={category.url}
                                             class="speaker-card-image"
                                         />
                                         <div class="speaker-card-read-more-container">
@@ -49,10 +49,10 @@ const List = ({ categories }) => {
                                         </div>
                                     </div>
                                     <span class="speaker-card-first-name">
-                                        <span>{category.title }</span>
+                                        <h4 >{category.title}</h4>
                                     </span>
                                     <span class="speaker-card-text">
-                                        <span>{category.about}</span>
+                                        <small>{category.about}</small>
                                     </span>
                                 </div>
 
