@@ -19,42 +19,7 @@
       "title": "Birthday Parties",
       "about": " Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       "id": 4
-    },
-    {
-      "name": "khozama",
-      "email": "ali@gmail.com",
-      "place": "hall",
-      "date": "2022-07-21",
-      "theme": "fun",
-      "category": "Birthday",
-      "id": 5
-    },
-    {
-      "name": "khozama",
-      "email": "ali@gmail.com",
-      "place": "hall",
-      "date": "2022-07-21",
-      "theme": "fun",
-      "category": "Birthday",
-      "id": 6
-    },
-    {
-      "name": "khozama",
-      "email": "ali@gmail.com",
-      "place": "hall",
-      "date": "2022-07-21",
-      "theme": "fun",
-      "category": "Birthday",
-      "id": 7
-    },
-    {
-      "name": "khozama",
-      "email": "ali@gmail.com",
-      "place": "hall",
-      "date": "2022-07-21",
-      "theme": "fun",
-      "category": "Birthday",
-      "id": 8
     }
+  
   ]
 }
