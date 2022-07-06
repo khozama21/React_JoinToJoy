@@ -8,13 +8,7 @@ const List = ({ categories }) => {
             {/* <h2> {title}</h2> */}
             <div class="home-speakers section-container">
                 <div class="home-max-width2 max-content-container">
-                    <div class="home-heading-container">
-
-                        <h1 class="home-text12 heading2">
-                            <span>Our Categories</span>
-                            <span class="home-text14"></span>
-                        </h1>
-                    </div>
+                     
                     <div class="home-speakers-container">
                         {categories.map((category) => (
 

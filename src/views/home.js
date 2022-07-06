@@ -154,10 +154,10 @@ const Home = (props) => {
           <div className="home-max-width2 max-content-container">
             <div className="home-heading-container">
               <span className="home-text11">
-                16 speakers from 7 countries and 3 continents
+             Most Popular Events Reserved
               </span>
               <h1 className="home-text12 heading2">
-                <span>meet our speakers</span>
+                <span>Events Categories</span>
                 <span className="home-text14"></span>
               </h1>
             </div>
