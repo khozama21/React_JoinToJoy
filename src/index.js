@@ -93,7 +93,7 @@ const App = () => {
       {/* body start */}
       <div>
         <Route exact component={Home} path="/" />
-        <Route exact component={Categories} path="/catergories" />
+        <Route exact component={Categories} path="/categories" />
         <Route exact component={Contact} path="/contact" />
         <Route exact component={Login} path="/login" />
         <Route exact component={Signup} path="/Signup" />
