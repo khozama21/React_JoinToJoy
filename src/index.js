@@ -8,6 +8,8 @@ import Contact from "./views/Contact";
 import Login from "./views/Login";
 import Signup from "./views/Signup";
 import { Categories } from "./categories/Categories";
+import { SingleCat } from "./categories/SingleCat";
+import { ApplicationForm } from "./categories/ApplicationForm";
 
 const App = () => {
   const [hide, setHide] = useState("hide")
@@ -97,6 +99,8 @@ const App = () => {
         <Route exact component={Contact} path="/contact" />
         <Route exact component={Login} path="/login" />
         <Route exact component={Signup} path="/Signup" />
+        <Route path="/categories/:id" component={SingleCat} />
+        <Route path="/application" component={ApplicationForm} />
       </div>
       {/* body end*/}
     </Router>

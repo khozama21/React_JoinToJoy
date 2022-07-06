@@ -11,7 +11,7 @@ const Show = () => {
         <div>
            
            {isPneding && <div className="text-center"><h3> LOADING...</h3> </div>}
-            {categories && <List categories={categories} title="All Categories" />}
+            {categories && <List categories={categories}  />}
             
             {/* <BlogList blogs={blogs.filter((blog)=>blog.author==='mario')} title="Mario's Blogs" /> */}
 
