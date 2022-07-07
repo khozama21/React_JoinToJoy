@@ -7,7 +7,7 @@ import useFetch from "./useFetch";
 
 export const SingleCat = () => {
   const { id } = useParams();
-  const { data: category, isPneding } = useFetch('http://localhost:8000/categories/' + id);
+  const { data: category, isPneding } = useFetch('http://localhost:8001/categories/' + id);
   const nav = useHistory();
 
 

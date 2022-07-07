@@ -3,7 +3,7 @@ import List from './catList';
 import useFetch from './useFetch';
 const Show = () => {
     console.log("hi")
-    const url = "http://localhost:8000/categories";
+    const url = "http://localhost:8001/categories";
     const {data: categories, isPneding } = useFetch(url)
     return (
 
