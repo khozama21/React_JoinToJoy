@@ -12,7 +12,7 @@ import { Categories } from '../categories/Categories'
 
 const Home = (props) => {
   return (
-    <div className="home-container">
+    <div className="home-container ">
       <Helmet>
         <title>Join to Joy</title>
         <meta property="og:title" content="Marketing event page" />

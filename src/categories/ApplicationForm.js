@@ -38,7 +38,7 @@ export const ApplicationForm = () => {
     return (
 
         
-        <div className='create   '>
+        <div className='create'>
 
         <h2> Fill Your Application </h2>
 
