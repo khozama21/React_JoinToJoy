@@ -41,28 +41,43 @@
     {
       "title": "Conferences",
       "about": " Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      "url":"https://www.brinknews.com/wp-content/uploads/2020/08/chuttersnap-Q_KdjKxntH8-unsplash.jpg",
+      "url": "https://www.brinknews.com/wp-content/uploads/2020/08/chuttersnap-Q_KdjKxntH8-unsplash.jpg",
       "id": 1
     },
     {
       "title": "Weddings",
       "about": " Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "url":"https://www.theknot.com/tk-media/images/e27e070d-16c2-4cea-8600-abf50103c841~rs_768.h",
+      "url": "https://www.theknot.com/tk-media/images/e27e070d-16c2-4cea-8600-abf50103c841~rs_768.h",
       "id": 2
     },
     {
       "title": "Graduation",
       "about": " Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      "url":"https://cdn.shopify.com/s/files/1/0115/4056/1978/products/Momo-Box_Graduation_0b1df704-8d73-45e6-a901-1121c96d725d_700x.jpg?v=1589284039",
+      "url": "https://cdn.shopify.com/s/files/1/0115/4056/1978/products/Momo-Box_Graduation_0b1df704-8d73-45e6-a901-1121c96d725d_700x.jpg?v=1589284039",
       "id": 3
     },
     {
       "title": "Birthday",
       "about": " Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-      "url":"https://i.pinimg.com/564x/a9/af/a4/a9afa41b7c883cfada18f6526b3f4b32.jpg",
+      "url": "https://i.pinimg.com/564x/a9/af/a4/a9afa41b7c883cfada18f6526b3f4b32.jpg",
       "id": 4
     }
-  
+  ],
+  "users": [
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "name": "Iusto aspernatur nes",
+      "email": "nojeha@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 3
+    }
   ]
-  
 }
