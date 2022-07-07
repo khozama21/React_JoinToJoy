@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from "react";
 import { SingleCat } from './SingleCat';
 import { useHistory } from 'react-router';
+import './app.css'
 
 
 export const ApplicationForm = () => {
@@ -35,7 +36,11 @@ export const ApplicationForm = () => {
 
     }
     return (
-        <div className='container m-5 bg-light'>
+
+        
+        <div className='create   '>
+
+        <h2> Fill Your Application </h2>
 
 
             <form onSubmit={handdleSubmit}  >
