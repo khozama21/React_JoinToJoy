@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./index.css";
 import "./style.css";
 import Home from "./views/home";
+import About from "./views/About";
 import Contact from "./views/Contact";
 import Login from "./views/Login";
 import Signup from "./views/Signup";
@@ -92,6 +93,7 @@ const App = () => {
       {/* nave bar end */}
       {/* body start */}
       <div>
+        <Route exact component={About} path="/About" />
         <Route exact component={Home} path="/" />
         <Route exact component={Categories} path="/categories" />
         <Route exact component={Contact} path="/contact" />

@@ -434,6 +434,9 @@
   text-transform: none;
 }
 .home-image7 {
+  background-image: url(https://www.weddingsbymary.co.uk/wp-content/uploads/2019/07/Golding-Redding_11.05.19_167.jpg);
+  background-size: cover;
+  background-position: center;
   width: 55%;
   min-height: 880px;
   object-fit: cover;
@@ -584,6 +587,7 @@
   .home-image7 {
     width: 50%;
     object-position: left;
+   
   }
   .home-slider-controls {
     width: calc(75% + 48px);
@@ -628,6 +632,10 @@
   }
   .home-image7 {
     width: 100%;
+   
+    background-position: center;
+    background-size: cover;
+    
   }
   .home-previous-events {
     padding-bottom: var(--dl-space-space-sixunits);

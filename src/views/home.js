@@ -153,13 +153,9 @@ const Home = (props) => {
         <div className="home-speakers section-container">
           <div className="home-max-width2 max-content-container">
             <div className="home-heading-container">
-              <span className="home-text11">
-                16 speakers from 7 countries and 3 continents
-              </span>
-              <h1 className="home-text12 heading2">
-                <span>meet our speakers</span>
-                <span className="home-text14"></span>
-              </h1>
+        
+            
+              
             </div>
             <div className="home-speakers-container">
              <Categories/>
@@ -249,7 +245,7 @@ const Home = (props) => {
             </div>
           </div>
         </div>
-        <div className="home-location">
+        {/* <div className="home-location">
           <img
             alt="image"
             src="https://images.unsplash.com/photo-1564347288827-3e4293543e07?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE2fHxiZXJsaW58ZW58MHx8fHwxNjQzNzEzNjQ5&amp;ixlib=rb-1.2.1&amp;w=1500"
@@ -297,7 +293,7 @@ const Home = (props) => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="home-agenda section-container">
           <div className="home-max-width3 max-content-container">
             <div className="home-heading-container2">
@@ -351,64 +347,13 @@ const Home = (props) => {
                 ></EventCard>
                 <EventCard
                   title="beyond the metaverse"
-                  image_src="https://images.unsplash.com/photo-1558222218-b7b54eede3f3?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEwNHx8cGVvcGxlfGVufDB8fHx8MTY0MzcwODY4MQ&amp;ixlib=rb-1.2.1&amp;h=300"
+                  // image_src="https://images.unsplash.com/photo-1558222218-b7b54eede3f3?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEwNHx8cGVvcGxlfGVufDB8fHx8MTY0MzcwODY4MQ&amp;ixlib=rb-1.2.1&amp;h=300"
                 ></EventCard>
               </div>
             </div>
           </div>
         </div>
-        <div className="home-workshops">
-          <div className="home-content-container2">
-            <div className="home-container6">
-              <h1 className="home-text38 heading2">
-                <span>
-                  register for
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <br></br>
-                <span className="home-text41">super insightful</span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <br></br>
-                <span>
-                  workshops for
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <br></br>
-                <span>your team</span>
-              </h1>
-              <span className="home-text47">
-                get early discounts and group discounts
-              </span>
-              <span className="home-text48">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </span>
-              <button className="button button-md button-outline">
-                learn more
-              </button>
-            </div>
-          </div>
-          <img
-            alt="image"
-            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDIwfHxidXNpbmVzc3xlbnwwfHx8fDE2NDM3MzQ3MjI&amp;ixlib=rb-1.2.1&amp;w=1500"
-            className="home-image7"
-          />
-        </div>
+        
       
       </main>
       <Footer rootClassName="footer-root-class-name"></Footer>
