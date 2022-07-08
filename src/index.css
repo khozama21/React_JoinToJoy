@@ -18,7 +18,14 @@
   align-items: center;
   justify-content: left;
 }
+.contact{
+  /* background-color: black; */
+}
 
+.contactFather{
+  background-color: black;
+  height: 90vh;
+}
 .navImage {
   width: 90px;
 }

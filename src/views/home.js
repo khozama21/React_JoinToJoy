@@ -153,58 +153,21 @@ const Home = (props) => {
         <div className="home-speakers section-container">
           <div className="home-max-width2 max-content-container">
             <div className="home-heading-container">
-        
-            
-              
+              <span className="home-text11">
+             Most Popular Events Reserved
+              </span>
+              <h1 className="home-text12 heading2">
+                <span>Events Categories</span>
+                <span className="home-text14"></span>
+              </h1>
             </div>
             <div className="home-speakers-container">
              <Categories/>
-              {/* <SpeakerCard
-                role="digital marketing associate @ WPP"
-                lastName="Simpson"
-                firstName="Mellisa"
-                image_src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHBlb3BsZXxlbnwwfHx8fDE2NDM3MDU1MTE&amp;ixlib=rb-1.2.1&amp;h=300"
-              ></SpeakerCard>
-              <SpeakerCard
-                role="VP OF Marketing @ BUZZFEED"
-                lastName="tevlenko"
-                firstName="alina"
-                image_src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDZ8fHBlb3BsZXxlbnwwfHx8fDE2NDM3MDU1MTE&amp;ixlib=rb-1.2.1&amp;h=300"
-              ></SpeakerCard>
-              <SpeakerCard
-                role="HEAD OF DIGITAL @ HUBSPOT"
-                lastName="iprovich"
-                firstName="gregor"
-                image_src="https://images.unsplash.com/photo-1537511446984-935f663eb1f4?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDI5fHxwZW9wbGV8ZW58MHx8fHwxNjQzNzA1NTEx&amp;ixlib=rb-1.2.1&amp;h=300"
-              ></SpeakerCard>
-              <SpeakerCard
-                role="marketing officer @ salesforce"
-                lastName="daris"
-                firstName="damian"
-                image_src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDExfHxwZW9wbGV8ZW58MHx8fHwxNjQzNzA1NTEx&amp;ixlib=rb-1.2.1&amp;h=300"
-              ></SpeakerCard>
-              <SpeakerCard
-                role="social media manager @ vodafone"
-                lastName="warren"
-                firstName="matt"
-                image_src="https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE0N3x8cGVvcGxlfGVufDB8fHx8MTY0MzcwODY5MQ&amp;ixlib=rb-1.2.1&amp;h=300"
-              ></SpeakerCard>
-              <SpeakerCard
-                role="creative director @ BBDO"
-                lastName="moore"
-                firstName="kathie"
-                image_src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE2OHx8cGVvcGxlfGVufDB8fHx8MTY0MzcwODY5MQ&amp;ixlib=rb-1.2.1&amp;h=300"
-              ></SpeakerCard>
-              <SpeakerCard
-                role="CMO @ youtube Europe"
-                lastName="chan"
-                firstName="erick"
-                image_src="https://images.unsplash.com/photo-1558222218-b7b54eede3f3?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEwNHx8cGVvcGxlfGVufDB8fHx8MTY0MzcwODY4MQ&amp;ixlib=rb-1.2.1&amp;h=300"
-              ></SpeakerCard> */}
+           
             </div>
           </div>
         </div>
-        <div className="home-numbers-banner section-container">
+        {/* <div className="home-numbers-banner section-container">
           <div className="home-container2 max-content-container">
             <div className="home-heading-container1">
               <span className="home-text15">
@@ -244,56 +207,8 @@ const Home = (props) => {
               ></NumbersCard>
             </div>
           </div>
-        </div>
-        {/* <div className="home-location">
-          <img
-            alt="image"
-            src="https://images.unsplash.com/photo-1564347288827-3e4293543e07?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDE2fHxiZXJsaW58ZW58MHx8fHwxNjQzNzEzNjQ5&amp;ixlib=rb-1.2.1&amp;w=1500"
-            className="home-image6"
-          />
-          <div className="home-content-container1 section-container">
-            <div className="home-container3">
-              <span className="home-text18">berlin, germany</span>
-              <span className="home-text19">7-8 MARCH 2023</span>
-              <div className="home-container4">
-                <span className="home-text20">
-                  <span>— mob-x</span>
-                </span>
-                <span className="home-text22">
-                  <span>conference</span>
-                </span>
-                <span className="home-text24">
-                  <span>center</span>
-                </span>
-              </div>
-              <div className="home-container5">
-                <span className="home-text26">beautiful, vibrant berlin</span>
-                <span className="home-text27">
-                  <span>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                    do amet sint. Velit officia consequat duis enim velit
-                    mollit. Exercitation veniam consequat sunt nostrud amet.
-                  </span>
-                  <br></br>
-                  <span></span>
-                  <br></br>
-                  <span>
-                    Lorem Ipsum, Velit officia consequat duis enim velit mollit.
-                    Exercitation veniam consequat sunt nostrud amet.
-                  </span>
-                </span>
-                <div className="home-btns-container1">
-                  <button className="button-secondary button button-md">
-                    register
-                  </button>
-                  <button className="home-learn-more button button-outline button-md-border">
-                    learn more
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div> */}
+        {/* / */}
         <div className="home-agenda section-container">
           <div className="home-max-width3 max-content-container">
             <div className="home-heading-container2">
@@ -347,14 +262,13 @@ const Home = (props) => {
                 ></EventCard>
                 <EventCard
                   title="beyond the metaverse"
-                  // image_src="https://images.unsplash.com/photo-1558222218-b7b54eede3f3?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEwNHx8cGVvcGxlfGVufDB8fHx8MTY0MzcwODY4MQ&amp;ixlib=rb-1.2.1&amp;h=300"
+                  image_src="https://images.unsplash.com/photo-1558222218-b7b54eede3f3?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEwNHx8cGVvcGxlfGVufDB8fHx8MTY0MzcwODY4MQ&amp;ixlib=rb-1.2.1&amp;h=300"
                 ></EventCard>
               </div>
             </div>
           </div>
         </div>
-        
-      
+       
       </main>
       <Footer rootClassName="footer-root-class-name"></Footer>
     </div>

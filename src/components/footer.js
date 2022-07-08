@@ -14,17 +14,15 @@ const Footer = (props) => {
           <h1 className="footer-text heading2">
             <span className="">REGISTER NOW FOR</span>
             <br className=""></br>
-            <span className="">MARKET1 conference</span>
+            <span className="">And Reserve a Date for your Big Event</span>
           </h1>
           <span className="footer-text03">
             <span className=""></span>
-            <span className="">
-              get ready for the most insightful marketing event
-            </span>
+             
           </span>
           <div className="footer-btns-container">
             <button className="footer-register-now button-primary button-lg button">
-              register NOW
+              <a href='Signup.js'> REGISTER NOW</a>
             </button>
             <button className="footer-contact-us button button-outline button-lg-border">
               CONTACT US
