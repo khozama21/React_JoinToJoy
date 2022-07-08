@@ -1,63 +1,85 @@
-import React from 'react'
+import React from "react";
 import { useState } from "react";
-import { useHistory } from 'react-router';
-import './app.css'
-
+import { useHistory } from "react-router";
+import "./app.css";
 
 const Signup = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [isPneding, setIsPending] = useState(false);
+  const nav = useHistory();
 
+  const handdleSubmit = (e) => {
+    e.preventDefault();
+    const user = { name, email, password };
 
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [isPneding, setIsPending] = useState(false);
-    const nav = useHistory();
+    fetch("http://localhost:8001/users", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(user),
+    }).then(() => {
+      console.log("user has been successfully Added");
+      setIsPending(false);
+      nav.push("/");
+    });
+  };
+  return (
+    <div className="create   ">
+      <h2> Sign Up </h2>
 
-    const handdleSubmit = (e) => {
+      <form onSubmit={handdleSubmit}>
+        <div class="form-group">
+          <label>Name </label>
+          <input
+            className="form-control"
+            required
+            type="text"
+            value={name}
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
+            placeholder="Name"
+          />
+        </div>
 
-        e.preventDefault();
-        const user = { name, email, password};
+        <div class="form-group">
+          <label>Email</label>
+          <input
+            className="form-control"
+            type="email"
+            required
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+            placeholder="Email"
+          />
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input
+            className="form-control"
+            type="password"
+            required
+            value={password}
+            onChange={(e) => {
+              setPassword(e.target.value);
+            }}
+            placeholder="password"
+          />
+        </div>
+        {!isPneding && (
+          <button className="btn btn-primary  mt-5 mb-5 ">Submit</button>
+        )}
+        {isPneding && (
+          <button className="btn btn-primary" disabled>
+            Submiting Reservation...
+          </button>
+        )}
+      </form>
 
-
-        fetch('http://localhost:8001/users', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(user)
-        }).then(() => {
-            console.log('user has been successfully Added')
-            setIsPending(false)
-            nav.push('/')
-
-        })
-
-    }
-    return (
-
-        
-        <div className='create   '>
-
-        <h2> Sign Up </h2>
-
-
-            <form onSubmit={handdleSubmit}  >
-                <div class="form-group">
-                    <label>Name </label>
-                    <input className='form-control' required type="text" value={name} onChange={e => { setName(e.target.value) }} placeholder="Name" />
-                </div>
-
-                <div class="form-group">
-                    <label>Email</label>
-                    <input className='form-control' type="email" required value={email} onChange={e => { setEmail(e.target.value) }} placeholder="Email"/>
-                </div>
-                <div class="form-group">
-                    <label>Password</label>
-                    <input className='form-control' type="password" required value={password} onChange={e => { setPassword(e.target.value) }} placeholder="password" />
-                </div>
-                {!isPneding && <button className="btn btn-primary  mt-5 mb-5 ">Submit</button>}
-                {isPneding && <button className="btn btn-primary" disabled>Submiting Reservation...</button>}
-            </form>
-
-            {/* <Form onSubmit={handdleSubmit}>
+      {/* <Form onSubmit={handdleSubmit}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Name</Form.Label>
                             <Form.Control type="text" placeholder="Name" required value={name} onChange={e => { setName(e.target.value) }} />
@@ -87,13 +109,7 @@ const Signup = () => {
 
                     </Form>
  */}
-
-
-
-
-
-
-        </div>
-    )
-}
+    </div>
+  );
+};
 export default Signup;

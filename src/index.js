@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { useHistory } from "react-router";
 import "./index.css";
 import "./style.css";
 import Home from "./views/home";
@@ -12,16 +13,19 @@ import { SingleCat } from "./categories/SingleCat";
 import { ApplicationForm } from "./categories/ApplicationForm";
 
 const App = () => {
-  const [hide, setHide] = useState("hide")
+  const [hide, setHide] = useState("hide");
+  const nav = useHistory();
+  const logoutHandler = () => {
+    localStorage.setItem("isLoggedIn", false);
+    location.reload();
+  };
   const hideHandler = () => {
     if (hide == "hide") {
-      setHide("no")
+      setHide("no");
     } else {
-      setHide("hide")
+      setHide("hide");
     }
-
-
-  }
+  };
   return (
     <Router>
       {/* nave bar start */}
@@ -82,14 +86,28 @@ const App = () => {
             </Link>
           </div>
         </div>
-        <div className="rightNav">
-          <Link className="navLog" to="/login">
-            Login
-          </Link>
-          <Link className="navLog" to="/Signup">
-            SignUp
-          </Link>
-        </div>
+        {(() => {
+          if (localStorage.getItem("isLoggedIn") == "false") {
+            return (
+              <div className="rightNav">
+                <Link className="navLog" to="/login">
+                  Login
+                </Link>
+                <Link className="navLog" to="/Signup">
+                  SignUp
+                </Link>
+              </div>
+            );
+          } else if (localStorage.getItem("isLoggedIn") == "true") {
+            return (
+              <div className="rightNav">
+                <button className="navLog" onClick={logoutHandler}>
+                  LogOut
+                </button>
+              </div>
+            );
+          }
+        })()}
       </nav>
       {/* nave bar end */}
       {/* body start */}
