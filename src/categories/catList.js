@@ -6,8 +6,8 @@ const List = ({ categories }) => {
 
         <div>
             {/* <h2> {title}</h2> */}
-            <div class="home-speakers section-container">
-                <div class="home-max-width2 max-content-container">
+            <div class=" section-container">
+                <div class="   container">
                      
                     <div class="home-speakers-container">
                         {categories.map((category) => (
@@ -45,9 +45,7 @@ const List = ({ categories }) => {
                                     <span class="speaker-card-first-name">
                                         <h4 >{category.title}</h4>
                                     </span>
-                                    <span class="speaker-card-text">
-                                        <small>{category.about}</small>
-                                    </span>
+                                    
                                 </div>
 
 

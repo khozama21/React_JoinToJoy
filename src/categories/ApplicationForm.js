@@ -38,7 +38,11 @@ export const ApplicationForm = () => {
     return (
 
         
+<<<<<<< HEAD
         <div className='create   '>
+=======
+        <div className='create'>
+>>>>>>> 2e51cce0d2347be72ba6e53b9bd8c199a5cb2faf
 
         <h2> Fill Your Application </h2>
 

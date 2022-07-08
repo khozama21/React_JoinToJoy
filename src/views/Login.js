@@ -1,26 +1,76 @@
-
-
-
+import { useEffect, useState } from "react";
+import { useHistory } from "react-router";
 const Login = (props) => {
-    return(
-        <div id="main-con">
-        <form>
-    <div className="mb-3">
-        <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-        <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div className="mb-3">
-        <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-        <input type="password" className="form-control" id="exampleInputPassword1" />
-    </div>
-    <div className="mb-3 form-check">
-        <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-        <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" className="btn btn-primary">Submit</button>
-    </form>
-        </div>
-    )
+  const [error, setError] = useState(null);
+  const [items, setItems] = useState([]);
+  const [Password, setPassword] = useState("");
+  const [Email, setEmail] = useState("");
+  const nav = useHistory();
+  useEffect(() => {
+    fetch("http://localhost:8001/users")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          setItems(result);
+        },
+        (error) => {
+          setError(error);
+        }
+      );
+  }, []);
+
+  if (error) {
+    return <div>Error: No users</div>;
+  }
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    for (let i = 0; i < items.length; i++) {
+      if (items[i].password == Password && items[i].email == Email) {
+        console.log("done");
+        localStorage.setItem("isLoggedIn", true);
+        localStorage.setItem("userId", items[i].id);
+        nav.push("/");
+        location.reload();
+      }
     }
-    export default Login
+  };
+  return (
+    <div className="create">
+      <h2> Log In </h2>
+
+      <form onSubmit={submitHandler}>
+        <div className="form-group">
+          <label>Email</label>
+          <input
+            className="form-control"
+            value={Email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+            type="email"
+            required
+            placeholder="Email"
+          />
+        </div>
+        <div className="form-group">
+          <label>Password</label>
+          <input
+            className="form-control"
+            value={Password}
+            onChange={(e) => {
+              setPassword(e.target.value);
+            }}
+            type="password"
+            required
+            placeholder="password"
+          />
+        </div>
+        <button type="submit" className="btn btn-primary  mt-5 mb-5 ">
+          Submit
+        </button>
+      </form>
+    </div>
+  );
+};
+export default Login;
