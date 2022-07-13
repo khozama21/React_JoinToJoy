@@ -35,6 +35,15 @@
       "theme": "dsd",
       "category": "Birthday",
       "id": 4
+    },
+    {
+      "name": "salam",
+      "email": "salambelal99@gmail.com",
+      "place": "house",
+      "date": "2222-02-22",
+      "theme": "blue",
+      "category": "Birthday",
+      "id": 5
     }
   ],
   "categories": [
@@ -60,6 +69,29 @@
       "title": "Birthday",
       "about": " Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
       "url": "https://i.pinimg.com/564x/a9/af/a4/a9afa41b7c883cfada18f6526b3f4b32.jpg",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "name": "Iusto aspernatur nes",
+      "email": "nojeha@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "id": 3
+    },
+    {
+      "name": "salam belal",
+      "email": "salambelal99@gmail.com",
+      "password": "Salam99*",
       "id": 4
     }
   ]

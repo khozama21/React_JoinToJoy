@@ -49,7 +49,7 @@ export const SingleCat = () => {
         </article>
       )}
       {(() => {
-        if (localStorage.getItem("isLoggedIn") == "false") {
+        if (localStorage.getItem("isLoggedIn") == "true") {
           return (
             <a href="/application" className="btn btn-primary mb-5">
               Fill Application

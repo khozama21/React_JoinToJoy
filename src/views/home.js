@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from "react-helmet";
 
-import SpeakerCard from '../components/speaker-card'
-import NumbersCard from '../components/numbers-card'
-import EventCard from '../components/event-card'
-import Slide from '../components/slide'
-import Footer from '../components/footer'
-import './home.css'
-import { Categories } from '../categories/Categories'
+import SpeakerCard from "../components/speaker-card";
+import NumbersCard from "../components/numbers-card";
+import EventCard from "../components/event-card";
+import Slide from "../components/slide";
+import Footer from "../components/footer";
+import "./home.css";
+import { Categories } from "../categories/Categories";
 
 const Home = (props) => {
   return (
@@ -23,22 +23,22 @@ const Home = (props) => {
             <div className="home-content-container">
               <h1 className="home-text heading1">
                 <span>
-                TAKE ACTION.
+                  TAKE ACTION.
                   <span
                     dangerouslySetInnerHTML={{
-                      __html: ' ',
+                      __html: " ",
                     }}
                   />
                 </span>
                 <span>Plan Your Event with</span> <br></br>
                 <span className="home-text02">JOIN TO JOY</span>
-               
-               
               </h1>
               <span className="home-text05">
-                <span>where we style  birthdays , graduation, shower parties and chocolate designs.</span>
+                <span>
+                  where we style birthdays , graduation, shower parties and
+                  chocolate designs.
+                </span>
                 <br></br>
-               
               </span>
               <div className="home-btns-container">
                 <button className="home-primary button-primary button-lg button">
@@ -50,7 +50,7 @@ const Home = (props) => {
               </div>
             </div>
             <div className="home-video-container">
-              <div  className="home-video">  </div>
+              <div className="home-video"> </div>
             </div>
           </div>
           <div className="home-blue-background"></div>
@@ -67,7 +67,7 @@ const Home = (props) => {
               </span>
             </div>
           </div>
-          
+
           <div data-type="slider" className="home-slider">
             <Slide rootClassName="slide-root-class-name4"></Slide>
             <Slide
@@ -77,10 +77,7 @@ const Home = (props) => {
             <Slide
               // heading="Slide #3"
               rootClassName="slide-root-class-name"
-             
-            >
-             
-            </Slide>
+            ></Slide>
             <Slide
               // heading="Slide #4"
               rootClassName="slide-root-class-name3"
@@ -103,12 +100,6 @@ const Home = (props) => {
             </div>
           </div>
         </div>
-
-
-
-
-
-
 
         {/* <div className="home-sponsors section-container">
           <div className="home-max-width1 max-content-container">
@@ -153,17 +144,14 @@ const Home = (props) => {
         <div className="home-speakers section-container">
           <div className="home-max-width2 max-content-container">
             <div className="home-heading-container">
-              <span className="home-text11">
-             Most Popular Events Reserved
-              </span>
+              <span className="home-text11">Most Popular Events Reserved</span>
               <h1 className="home-text12 heading2">
                 <span>Events Categories</span>
                 <span className="home-text14"></span>
               </h1>
             </div>
             <div className="home-speakers-container">
-             <Categories/>
-           
+              <Categories />
             </div>
           </div>
         </div>
@@ -213,7 +201,7 @@ const Home = (props) => {
           <div className="home-max-width3 max-content-container">
             <div className="home-heading-container2">
               <h1 className="home-text31 heading2">
-                <span>key events agenda</span>
+                <span>Comments from our clients</span>
               </h1>
               <span className="home-text33">
                 more announcements are coming soon
@@ -268,11 +256,10 @@ const Home = (props) => {
             </div>
           </div>
         </div>
-       
       </main>
       <Footer rootClassName="footer-root-class-name"></Footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
