@@ -21,6 +21,7 @@ const Signup = () => {
     }).then(() => {
       console.log("user has been successfully Added");
       setIsPending(false);
+      localStorage.setItem("isLoggedIn", "true");
       nav.push("/");
     });
   };

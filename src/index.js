@@ -7,7 +7,7 @@ import "./style.css";
 import Home from "./views/home";
 import Contact from "./views/Contact";
 import Contact2 from "./views/contact2";
-import About from './views/About';
+import About from "./views/About";
 
 import Login from "./views/Login";
 import Signup from "./views/Signup";
@@ -107,6 +107,17 @@ const App = () => {
                 <button className="navLog" onClick={logoutHandler}>
                   LogOut
                 </button>
+              </div>
+            );
+          } else {
+            return (
+              <div className="rightNav">
+                <Link className="navLog" to="/login">
+                  Login
+                </Link>
+                <Link className="navLog" to="/Signup">
+                  SignUp
+                </Link>
               </div>
             );
           }
