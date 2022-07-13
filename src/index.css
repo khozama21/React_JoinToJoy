@@ -1,7 +1,7 @@
 /* nav styling start */
 
 .mainNav {
-  background-color: rgba(255, 255, 255,0.97);
+  background-color: rgba(255, 255, 255, 0.97);
   padding: 20px 40px;
   font-size: 18px;
   display: flex;
@@ -18,12 +18,11 @@
   align-items: center;
   justify-content: left;
 }
-.contact{
+.contact {
   /* background-color: black; */
 }
 
-.contactFather{
-  background-color: black;
+.contactFather {
   height: 90vh;
 }
 .navImage {
@@ -110,23 +109,24 @@
   display: none;
 }
 /* media query */
-@media(max-width:700px){
-  .navLink{
+@media (max-width: 700px) {
+  .navLink {
     display: none;
   }
-  .burgerLinks .navLink{
+  .burgerLinks .navLink {
     display: block;
   }
 }
-@media(max-width:500px){
+@media (max-width: 500px) {
   .mainNav {
-    padding: 20px 5px;}
+    padding: 20px 5px;
+  }
 }
-@media(min-width:701px){
-  .navLinks .icon{
+@media (min-width: 701px) {
+  .navLinks .icon {
     display: none;
   }
-  .burgerLinks{
+  .burgerLinks {
     display: none;
   }
 }

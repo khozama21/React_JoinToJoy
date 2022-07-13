@@ -72,3 +72,12 @@ body {
   border-radius: 8px;
   cursor: pointer;
 }
+.loginBtn {
+  color: #0e97bb;
+  border: solid #0e97bb 1px;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+.loginBtn:hover {
+  color: #11b6df;
+}

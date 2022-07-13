@@ -78,9 +78,6 @@ const App = () => {
             <Link className="navLink" to="/categories">
               Catergories
             </Link>
-            <Link className="navLink" to="/">
-              Home
-            </Link>
             <Link className="navLink" to="/about">
               About
             </Link>
