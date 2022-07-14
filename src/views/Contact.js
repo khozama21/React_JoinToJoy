@@ -1,10 +1,15 @@
 import emailjs from 'emailjs-com'
 import Footer from '../components/footer'
+import { useEffect, useState } from "react";
+import { useHistory } from "react-router";
 const Contact = (props) => {
     function sendEmail(e){
         e.preventDefault();
         emailjs.sendForm('service_14pzppj','template_3cxyi7y',e.target ,'V5vnTPeUuLrudh_Ty');
+        nav.push("/home")
     }
+
+    
 return(
 
         <>

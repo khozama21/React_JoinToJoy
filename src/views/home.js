@@ -41,9 +41,6 @@ const Home = (props) => {
                 <br></br>
               </span>
               <div className="home-btns-container">
-                <button className="home-primary button-primary button-lg button">
-                  register now
-                </button>
                 <button className="button button-outline button-lg-border">
                   learn more
                 </button>
