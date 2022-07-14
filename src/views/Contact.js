@@ -2,7 +2,7 @@ import emailjs from 'emailjs-com'
 const Contact = (props) => {
     function sendEmail(e){
         e.preventDefault();
-        emailjs.sendForm(service_14pzppj,template_3cxyi7y,e.target ,V5vnTPeUuLrudh_Ty);
+        emailjs.sendForm('service_14pzppj','template_3cxyi7y',e.target ,'V5vnTPeUuLrudh_Ty');
     }
 return(
     <div className="contactFather">
