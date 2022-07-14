@@ -2,8 +2,7 @@ import React from "react";
 
 import { Helmet } from "react-helmet";
 
-import SpeakerCard from "../components/speaker-card";
-import NumbersCard from "../components/numbers-card";
+
 import EventCard from "../components/event-card";
 import Slide from "../components/slide";
 import Footer from "../components/footer";
@@ -41,11 +40,11 @@ const Home = (props) => {
                 <br></br>
               </span>
               <div className="home-btns-container">
-                <button className="home-primary button-primary button-lg button">
+                {/* <button className="home-primary button-primary button-lg button">
                   register now
-                </button>
+                </button> */}
                 <button className="button button-outline button-lg-border">
-                  learn more
+                <a href="/Categories/Categories"> BOOK NOW</a>
                 </button>
               </div>
             </div>

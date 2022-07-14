@@ -1,3 +1,4 @@
+
 import React from "react";
 
 import PropTypes from "prop-types";
@@ -10,7 +11,7 @@ const Footer = (props) => {
       className={`footer-footer section-container ${props.rootClassName} `}
     >
       <div className="footer-max-width max-content-container">
-        <div className="footer-banner">
+        {/* <div className="footer-banner">
           <h1 className="footer-text heading2">
             <span className="">REGISTER NOW FOR</span>
             <br className=""></br>
@@ -30,14 +31,14 @@ const Footer = (props) => {
               CONTACT US
             </a>
           </div>
-        </div>
+        </div> */}
         <div className="footer-bottom-container">
           <div className="footer-left-side">
-            <img
+            {/* <img
               alt="image"
               src="/playground_assets/logo-white-1200w.png"
               className="footer-image"
-            />
+            /> */}
             <span className="footer-text06">
               Register for the most insightful marketing conference of Europe.
               Over 30 speakers, 2 days full of digital marketing and social
