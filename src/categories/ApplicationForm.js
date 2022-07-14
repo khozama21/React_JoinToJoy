@@ -23,7 +23,6 @@ export const ApplicationForm = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(category1),
     }).then(() => {
-      console.log("Application has been successfully");
       setIsPending(false);
       nav.push("/categories");
     });

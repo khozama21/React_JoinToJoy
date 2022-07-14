@@ -44,6 +44,15 @@
       "theme": "blue",
       "category": "Birthday",
       "id": 5
+    },
+    {
+      "name": "Hala",
+      "email": "hala@gmail",
+      "place": "house",
+      "date": "2016-07-07",
+      "theme": "pink with cyan",
+      "category": "",
+      "id": 6
     }
   ],
   "categories": [
@@ -93,6 +102,12 @@
       "email": "salambelal99@gmail.com",
       "password": "Salam99*",
       "id": 4
+    },
+    {
+      "name": "Hala",
+      "email": "hala@gmail.com",
+      "password": "1234",
+      "id": 5
     }
   ]
 }
