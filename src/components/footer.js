@@ -34,11 +34,14 @@ const Footer = (props) => {
         </div> */}
         <div className="footer-bottom-container">
           <div className="footer-left-side">
+<<<<<<< HEAD
             {/* <img
               alt="image"
               src="/playground_assets/logo-white-1200w.png"
               className="footer-image"
             /> */}
+=======
+>>>>>>> e6898d690323ba233d823afd7bed56e1a6642603
             <span className="footer-text06">
               Register for the most insightful marketing conference of Europe.
               Over 30 speakers, 2 days full of digital marketing and social
@@ -110,87 +113,6 @@ const Footer = (props) => {
               <span className="footer-text22 footer-link">sales</span>
             </div>
           </div>
-        </div>
-        <div className="footer-copyright">
-          <span className="footer-text23">
-            <span className="">
-              <span className="">
-                © All rights reserved
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: " ",
-                  }}
-                />
-              </span>
-              <span className="">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: " ",
-                  }}
-                />
-              </span>
-            </span>
-            <a
-              href="https://www.teleporthq.io"
-              target="_blank"
-              rel="noreferrer noopener"
-              className=""
-            >
-              <span className="footer-text27">@TeleportHQ.</span>
-            </a>
-            <span className="">
-              <span className="">
-                {" "}
-                Powered by
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: " ",
-                  }}
-                />
-              </span>
-              <span className="">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: " ",
-                  }}
-                />
-              </span>
-            </span>
-            <a
-              href="https://www.vercel.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className=""
-            >
-              <span className="footer-text31">Vercel</span>
-            </a>
-            <span className="">
-              <span className="">
-                . Image source:
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: " ",
-                  }}
-                />
-              </span>
-              <span className="">
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: " ",
-                  }}
-                />
-              </span>
-            </span>
-            <a
-              href="https://www.unsplash.com"
-              target="_blank"
-              rel="noreferrer noopener"
-              className=""
-            >
-              <span className="footer-text35">Unsplash</span>
-            </a>
-            <span className="">.</span>
-          </span>
         </div>
       </div>
     </footer>

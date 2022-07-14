@@ -2,7 +2,9 @@ body{
     background-color: white;
 }
 
- 
+.link{
+  cursor: pointer;
+}
  
 
 /* create new blog form */
