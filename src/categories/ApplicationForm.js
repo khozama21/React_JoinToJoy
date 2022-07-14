@@ -79,6 +79,8 @@ export const ApplicationForm = () => {
             type="date"
             required
             value={date}
+            min="2022-07-14"
+            max="2023-01-01"
             onChange={(e) => {
               setDate(e.target.value);
             }}
