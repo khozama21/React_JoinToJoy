@@ -27,7 +27,7 @@ return(
         <label htmlFor="message">Message</label>
         <textarea className="form-control" rows="5" name="message"></textarea >
     </div>
-    <button type="submit" className="btn btn-primary" >Submit</button>
+    <button type="submit" className="btn btn-primary mt-25" >Submit</button>
 </form>
 </div>
 </div>

@@ -23,6 +23,10 @@ const Login = (props) => {
     return <div>Error: No users</div>;
   }
 
+  const handleclick = () =>{
+    nav.push("/Signup")
+  }
+
   const submitHandler = (e) => {
     e.preventDefault();
     for (let i = 0; i < items.length; i++) {
@@ -67,8 +71,11 @@ const Login = (props) => {
           />
         </div>
         <button type="submit" className="btn btn-primary  mt-5 mb-5 ">
-          Submit
+          Login
         </button>
+
+        <a onClick={handleclick} className="pe-auto link">Don't have an account ?</a>
+
       </form>
     </div>
   );
